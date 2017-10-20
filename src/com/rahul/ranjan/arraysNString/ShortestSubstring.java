@@ -1,4 +1,4 @@
-package com.rahul.ranjan.arrays.and.string;
+package com.rahul.ranjan.arraysNString;
 
 
 // Read only region start

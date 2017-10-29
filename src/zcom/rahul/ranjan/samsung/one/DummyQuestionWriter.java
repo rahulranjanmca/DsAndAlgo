@@ -27,28 +27,22 @@ public class DummyQuestionWriter {
 					fw = new FileWriter(FILENAME);
 					out =new PrintWriter(fw);
 					int Q= tlr.nextInt(0, N-1);
-					out.println(N+" "+Q);
+					
 					StringBuffer string= new StringBuffer();
-					for(int i=0;i<N;i++)
+					for(int i=0;i<100000;i++)
 					{
 						
-						long number=tlr.nextLong(1,1000000000l);
-						String str=""+number;
-						string.append(""+number);
-						string.append(" ");
+					
+			
+						string.append(9999+" "+9999+" "+9999);
+						string.append("\n");
 						
 						//out.print(" ");
 					}
-					System.out.println(string);
+				//	System.out.println(string);
 					
 					out.println(string);
-					for(int i=0;i<Q;i++)
-					{
-						int firstBound=tlr.nextInt(1,100000);
-						int secondBound=tlr.nextInt(firstBound, 100000);
-						out.print(firstBound+" "+secondBound);
-						out.print("\n");
-					}
+					
 
 					System.out.println("Done");
 

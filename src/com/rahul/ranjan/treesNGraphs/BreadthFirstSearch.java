@@ -3,13 +3,13 @@ package com.rahul.ranjan.treesNGraphs;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class BeadthFirstSearch {
+public class BreadthFirstSearch {
 
 	private int V; // No. of vertices
 	private LinkedList<Integer> adj[]; // Adjacency Lists
 
 	// Constructor
-	BeadthFirstSearch(int v)
+	BreadthFirstSearch(int v)
     {
         V = v;
         adj = new LinkedList[v];
@@ -43,7 +43,7 @@ public class BeadthFirstSearch {
 			// Get all adjacent vertices of the dequeued vertex s
 			// If a adjacent has not been visited, then mark it
 			// visited and enqueue it
-			Iterator<Integer> i = adj[s].listIterator();
+			Iterator<Integer> i = adj[s].iterator();
 			while (i.hasNext()) {
 				int n = i.next();
 				if (!visited[n]) {
@@ -56,7 +56,7 @@ public class BeadthFirstSearch {
 
 	// Driver method to
 	public static void main(String args[]) {
-		BeadthFirstSearch g = new BeadthFirstSearch(4);
+		BreadthFirstSearch g = new BreadthFirstSearch(4);
 
 		g.addEdge(0, 1);
 		g.addEdge(0, 2);
